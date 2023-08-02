@@ -40,3 +40,14 @@ function count(temp){
   //let array = [1, 2, 3, 4, 5, 6];
   //count(array);
   //************************************** */
+  
+  function powSum(temp){
+    var sum = 0;
+    for (var i = 0; i < temp.length; i++) {
+        sum += Math.pow(temp[i], 2);
+      }
+    console.log(sum);
+}
+
+//let array2 = [0, 1, 2, 3, 4, 5];
+//powSum(array2);
