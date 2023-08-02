@@ -13,3 +13,12 @@ function stringReversed(txt) {
 }
 
 //console.log(stringReversed("Akademia108"));
+//************************************** */
+
+function stringSorted (txt) {
+    var txt2 = txt.split('').sort().join('');
+    return txt2;
+}
+
+//console.log(stringSorted("Akademia108"));
+//************************************** */
