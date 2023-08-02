@@ -62,3 +62,36 @@ function fib(n) {
 }
 //fib(10);
 //************************************** */
+
+class Ksiazka {
+    constructor(tytul, autor, przeczytana) {
+      this.tytul = tytul;
+      this.autor = autor;
+      this.przeczytana = przeczytana;
+    }
+    opiszKsiazke() {
+        console.log( `Książka ma tytuł ${this.tytul}, autorem jest ${this.autor} i została ${this.przeczytana} przeczytana.` );
+    }
+}
+  
+let WiedzminOstatnieZyczenie = new Ksiazka ('Wiedzmin Ostatnie Zyczenie', 'Andrzej Sapkowski', true);
+  
+let WiedzminMieczPrzeznaczenia = new Ksiazka ('Wiedzmin Miecz Przeznaczenia', 'Andrzej Sapkowski', false);
+  
+let WiedzminKrewElfow = new Ksiazka ('Wiedzmin Krew Elfow', 'Andrzej Sapkowski', false);
+  
+let listOfBooks = [WiedzminOstatnieZyczenie, WiedzminMieczPrzeznaczenia, WiedzminKrewElfow];
+  
+function iloscPrzeczytanych(array) {
+    var count = 0;
+    for ( var i = 0; i < array.length; i++ ) {
+      if (array[i].przeczytana) {
+        count++;
+      }
+      array[i].opiszKsiazke();
+    }
+    console.log(count);
+}
+
+//iloscPrzeczytanych(listOfBooks);
+//************************************** */
