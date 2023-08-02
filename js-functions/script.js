@@ -127,3 +127,20 @@ const iloczyn2 = (num1, num2, num3) => num1 * num2 * num3
 //console.log(wynikIloczynu);
 //************************************** */
 
+let jsonPracownicy = {
+    "pracownicy":[
+        {"firstName": "Krystian", "lastName": "Dziopa"}, 
+        {"firstName": "Anna", "lastName": "Szapiel"},
+        {"firstName": "Piotr", "lastName": "Żmuda"}
+    ]
+}
+
+//console.log(jsonPracownicy);
+
+jsonPracownicy.pracownicy.forEach(function (element, index) {
+    console.log(index, element.firstName, element.lastName);
+});
+
+//console.log(JSON.stringify(jsonPracownicy));
+//console.log(JSON.parse(jsonPracownicy));
+//************************************** */
