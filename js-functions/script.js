@@ -113,3 +113,17 @@ function bubbleSort(arr) {
 //let myArray =  [12, 67, 34, 23.01, 24, 2, 56, 8, 0x10, 23.02, 78, 34, 1e2, 45, 67, 98, 1];
 //console.log(bubbleSort(myArray));
 //************************************** */
+
+function iloczyn(num1, num2, num3) {
+    let result = num1 * num2 * num3;
+  
+    return result;
+}
+  
+//lub
+  
+const iloczyn2 = (num1, num2, num3) => num1 * num2 * num3 
+//let wynikIloczynu = iloczyn(2, 3, 4);
+//console.log(wynikIloczynu);
+//************************************** */
+
