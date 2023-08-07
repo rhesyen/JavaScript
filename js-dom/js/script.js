@@ -1,26 +1,24 @@
 //model DOM, obiekt window
 
-window.alert("Its me"); // = alert(); - metoda window
+//getElementById - 1 element:
+let articles = document.getElementById('articles');
+console.log(articles);
 
-let age = window.prompt("Podaj swoj wiek");
+//querySelector - 1 element; pierwszy z wszystkich pasujących elementów:
+let paragraph = document.querySelector('.content');
+console.log(paragraph);
 
-console.log(`Masz ${age} lat`); 
+//HTML-collection; podobny do tablic:
 
-let accept = window.confirm("Akceptuje");
-if (accept) {
-    console.log("Umowa zaakceptowana");
-}
-else {
-    console.log("Umowa niezaakceptowana");
-}
+//getElementsByClassName:
+let paragraphs = document.getElementsByClassName('content');
+console.log(paragraphs);
+console.log(paragraphs[1]);
 
-console.log(window); //- wszystkie atrybuty DOM wypisane w konsoli
+//getElementsByTagName:
+let allParagraphs = document.getElementsByTagName('p');
+console.log(allParagraphs);
 
-window.document.write(`<h2> Aniela </h2>`); //- obiekt window, bezposrednie odwolanie
-
-var number = 108;
-
-console.log(window);
-
-//HTML-collection; podobny do tablic
-
+//querySelectorAll - format elementu NODELIST
+let parContent = document.querySelectorAll('p.content');
+console.log(parContent);
